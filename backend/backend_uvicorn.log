@@ -1,0 +1,243 @@
+INFO:     Will watch for changes in these directories: ['/home/cyjin/server/backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [59052] using StatReload
+INFO:     Started server process [59054]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+✓ Successfully connected to MongoDB at mongodb://localhost:27017
+✓ Using database: diary_db
+INFO:     127.0.0.1:37498 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45516 - "GET /api/diaries/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45516 - "GET /api/diaries/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45516 - "GET /api/diaries/68f8c34c7faae71dc923b94d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45530 - "GET /api/diaries/68f8c34c7faae71dc923b94d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45516 - "GET /api/diaries/68f8c34c7faae71dc923b94d/comments?sort_by=newest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45530 - "GET /api/diaries/68f8c34c7faae71dc923b94d/comments?sort_by=newest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45530 - "GET /api/diaries/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45516 - "GET /api/diaries/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45516 - "GET /api/diaries/68f87bf013fc19779703ac54 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45530 - "GET /api/diaries/68f87bf013fc19779703ac54 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45530 - "GET /api/diaries/68f87bf013fc19779703ac54/comments?sort_by=newest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45516 - "GET /api/diaries/68f87bf013fc19779703ac54/comments?sort_by=newest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45516 - "GET /api/diaries/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45530 - "GET /api/diaries/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45530 - "GET /api/comments/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45516 - "GET /api/comments/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45516 - "GET /api/diaries/68f87bf013fc19779703ac54 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45530 - "GET /api/diaries/68f87bf013fc19779703ac54 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45530 - "GET /api/diaries/68f87bf013fc19779703ac54/comments?sort_by=newest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45516 - "GET /api/diaries/68f87bf013fc19779703ac54/comments?sort_by=newest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45516 - "GET /api/comments/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45530 - "GET /api/comments/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45530 - "GET /api/diaries/68f87bf013fc19779703ac54 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45516 - "GET /api/diaries/68f87bf013fc19779703ac54 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45530 - "GET /api/diaries/68f87bf013fc19779703ac54/comments?sort_by=newest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45516 - "GET /api/diaries/68f87bf013fc19779703ac54/comments?sort_by=newest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45516 - "GET /api/comments/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45530 - "GET /api/comments/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45530 - "OPTIONS /api/diaries?skip=0&limit=20&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45516 - "OPTIONS /api/diaries?skip=0&limit=20&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45516 - "GET /api/diaries?skip=0&limit=20&public_only=true HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:45530 - "GET /api/diaries?skip=0&limit=20&public_only=true HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:45530 - "OPTIONS /api/diaries/?skip=0&limit=20&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45516 - "OPTIONS /api/diaries/?skip=0&limit=20&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45534 - "GET /api/diaries/?skip=0&limit=20&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45534 - "GET /api/diaries/?skip=0&limit=20&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45534 - "GET /api/diaries?skip=0&limit=20&public_only=true HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:33778 - "GET /api/diaries?skip=0&limit=20&public_only=true HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:45534 - "GET /api/diaries/?skip=0&limit=20&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33778 - "GET /api/diaries/?skip=0&limit=20&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33778 - "GET /api/diaries?skip=0&limit=20&public_only=true HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:33778 - "GET /api/diaries/?skip=0&limit=20&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41078 - "OPTIONS /api/auth/login-json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41078 - "POST /api/auth/login-json HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:41092 - "POST /api/auth/login-json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41092 - "GET /api/diaries?skip=0&limit=20&public_only=true HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:41092 - "GET /api/diaries?skip=0&limit=20&public_only=true HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:41092 - "GET /api/diaries/?skip=0&limit=20&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41092 - "GET /api/diaries/?skip=0&limit=20&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52806 - "OPTIONS /api/diaries HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52806 - "POST /api/diaries HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:52806 - "OPTIONS /api/diaries/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52822 - "POST /api/diaries/ HTTP/1.1" 201 Created
+INFO:     127.0.0.1:52822 - "GET /api/diaries?skip=0&limit=20&public_only=true HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:52822 - "GET /api/diaries?skip=0&limit=20&public_only=true HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:52822 - "GET /api/diaries/?skip=0&limit=20&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52822 - "GET /api/diaries/?skip=0&limit=20&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38134 - "GET /api/diaries?skip=0&limit=20&public_only=true HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:38134 - "GET /api/diaries?skip=0&limit=20&public_only=true HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:38134 - "GET /api/diaries/?skip=0&limit=20&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38134 - "GET /api/diaries/?skip=0&limit=20&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38146 - "GET /api/diaries?skip=0&limit=20&public_only=true HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:38146 - "GET /api/diaries/?skip=0&limit=20&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57242 - "OPTIONS /api/diaries/68f8f5da346a2e47a4ce5f57 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57254 - "OPTIONS /api/diaries/68f8f5da346a2e47a4ce5f57 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57242 - "GET /api/diaries/68f8f5da346a2e47a4ce5f57 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57254 - "GET /api/diaries/68f8f5da346a2e47a4ce5f57 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57254 - "OPTIONS /api/diaries/68f8f5da346a2e47a4ce5f57/comments?sort_by=newest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57242 - "OPTIONS /api/diaries/68f8f5da346a2e47a4ce5f57/comments?sort_by=newest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57270 - "GET /api/diaries/68f8f5da346a2e47a4ce5f57/comments?sort_by=newest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57270 - "GET /api/diaries/68f8f5da346a2e47a4ce5f57/comments?sort_by=newest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57270 - "GET /api/diaries?skip=0&limit=20&public_only=true HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:57280 - "GET /api/diaries?skip=0&limit=20&public_only=true HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:57280 - "GET /api/diaries/?skip=0&limit=20&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57270 - "GET /api/diaries/?skip=0&limit=20&public_only=true HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'app/routes/diary.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [59054]
+✓ MongoDB connection closed
+INFO:     Started server process [60496]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+✓ Successfully connected to MongoDB at mongodb://localhost:27017
+✓ Using database: diary_db
+INFO:     127.0.0.1:38836 - "OPTIONS /api/diaries?skip=0&limit=10&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38836 - "GET /api/diaries?skip=0&limit=10&public_only=true HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:38836 - "OPTIONS /api/diaries/?skip=0&limit=10&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38838 - "GET /api/diaries/?skip=0&limit=10&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38838 - "GET /api/diaries?skip=0&limit=10&public_only=true HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:38838 - "GET /api/diaries?skip=0&limit=10&public_only=true HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:38838 - "GET /api/diaries/?skip=0&limit=10&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38850 - "GET /api/diaries/?skip=0&limit=10&public_only=true HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'app/routes/diary.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [60496]
+✓ MongoDB connection closed
+INFO:     Started server process [60549]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+✓ Successfully connected to MongoDB at mongodb://localhost:27017
+✓ Using database: diary_db
+INFO:     127.0.0.1:51652 - "GET /api/diaries?skip=0&limit=10&public_only=true HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:51652 - "GET /api/diaries/?skip=0&limit=10&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51652 - "OPTIONS /api/diaries?skip=10&limit=10&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51652 - "GET /api/diaries?skip=10&limit=10&public_only=true HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:51652 - "OPTIONS /api/diaries/?skip=10&limit=10&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51666 - "GET /api/diaries/?skip=10&limit=10&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51666 - "OPTIONS /api/diaries?skip=20&limit=10&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51666 - "GET /api/diaries?skip=20&limit=10&public_only=true HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:51666 - "OPTIONS /api/diaries/?skip=20&limit=10&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51682 - "GET /api/diaries/?skip=20&limit=10&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51682 - "GET /api/diaries?skip=10&limit=10&public_only=true HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:51682 - "GET /api/diaries/?skip=10&limit=10&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51682 - "GET /api/diaries?skip=0&limit=10&public_only=true HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:51682 - "GET /api/diaries/?skip=0&limit=10&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51682 - "GET /api/diaries?skip=20&limit=10&public_only=true HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:51682 - "GET /api/diaries/?skip=20&limit=10&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51682 - "GET /api/diaries?skip=10&limit=10&public_only=true HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:51682 - "GET /api/diaries/?skip=10&limit=10&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51682 - "GET /api/diaries?skip=0&limit=10&public_only=true HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:51682 - "GET /api/diaries/?skip=0&limit=10&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38020 - "GET /api/diaries?skip=0&limit=10&public_only=true HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:38020 - "GET /api/diaries?skip=0&limit=10&public_only=true HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:38020 - "GET /api/diaries/?skip=0&limit=10&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38020 - "GET /api/diaries/?skip=0&limit=10&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38020 - "OPTIONS /api/diaries/68f8f58e4071cbf2b7b9374e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43114 - "OPTIONS /api/diaries/68f8f58e4071cbf2b7b9374e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43114 - "GET /api/diaries/68f8f58e4071cbf2b7b9374e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38020 - "GET /api/diaries/68f8f58e4071cbf2b7b9374e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38020 - "OPTIONS /api/diaries/68f8f58e4071cbf2b7b9374e/comments?sort_by=newest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43114 - "OPTIONS /api/diaries/68f8f58e4071cbf2b7b9374e/comments?sort_by=newest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43116 - "GET /api/diaries/68f8f58e4071cbf2b7b9374e/comments?sort_by=newest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43128 - "GET /api/diaries/68f8f58e4071cbf2b7b9374e/comments?sort_by=newest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43128 - "DELETE /api/diaries/68f8f58e4071cbf2b7b9374e HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:43128 - "GET /api/diaries?skip=0&limit=10&public_only=true HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:43128 - "GET /api/diaries?skip=0&limit=10&public_only=true HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:43128 - "GET /api/diaries/?skip=0&limit=10&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43128 - "GET /api/diaries/?skip=0&limit=10&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43128 - "GET /api/diaries?skip=10&limit=10&public_only=true HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:43128 - "GET /api/diaries/?skip=10&limit=10&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43128 - "GET /api/diaries?skip=20&limit=10&public_only=true HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:43128 - "GET /api/diaries/?skip=20&limit=10&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43148 - "GET /uploads/profile_images/68f874f7a63a61075428bedd.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:43128 - "GET /api/diaries?skip=0&limit=10&public_only=true HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:43128 - "GET /api/diaries/?skip=0&limit=10&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43128 - "OPTIONS /api/diaries/68f8e361ac074682c1e615ef HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43134 - "OPTIONS /api/diaries/68f8e361ac074682c1e615ef HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43134 - "GET /api/diaries/68f8e361ac074682c1e615ef HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43128 - "GET /api/diaries/68f8e361ac074682c1e615ef HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43128 - "OPTIONS /api/diaries/68f8e361ac074682c1e615ef/comments?sort_by=newest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43134 - "OPTIONS /api/diaries/68f8e361ac074682c1e615ef/comments?sort_by=newest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43140 - "GET /api/diaries/68f8e361ac074682c1e615ef/comments?sort_by=newest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43140 - "GET /api/diaries/68f8e361ac074682c1e615ef/comments?sort_by=newest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43140 - "GET /api/diaries?skip=0&limit=10&public_only=true HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:57508 - "GET /api/diaries?skip=0&limit=10&public_only=true HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:57508 - "GET /api/diaries/?skip=0&limit=10&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43140 - "GET /api/diaries/?skip=0&limit=10&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43746 - "OPTIONS /api/diaries/me?skip=0&limit=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43752 - "OPTIONS /api/diaries/me?skip=0&limit=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43752 - "GET /api/diaries/me?skip=0&limit=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43746 - "GET /api/diaries/me?skip=0&limit=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43746 - "GET /api/diaries?skip=0&limit=10&public_only=true HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:43752 - "GET /api/diaries?skip=0&limit=10&public_only=true HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:43752 - "GET /api/diaries/?skip=0&limit=10&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43746 - "GET /api/diaries/?skip=0&limit=10&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43752 - "GET /api/diaries?skip=10&limit=10&public_only=true HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:43752 - "GET /api/diaries/?skip=10&limit=10&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43752 - "GET /api/diaries?skip=20&limit=10&public_only=true HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:43752 - "GET /api/diaries/?skip=20&limit=10&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43752 - "GET /api/diaries?skip=0&limit=10&public_only=true HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:43752 - "GET /api/diaries/?skip=0&limit=10&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55850 - "GET /api/diaries?skip=0&limit=10&public_only=true HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:55850 - "GET /api/diaries/?skip=0&limit=10&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55866 - "GET /uploads/profile_images/68f87b6c13fc19779703ac52.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:55862 - "GET /api/diaries?skip=10&limit=10&public_only=true HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:55862 - "GET /api/diaries/?skip=10&limit=10&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55862 - "GET /api/diaries?skip=20&limit=10&public_only=true HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:55862 - "GET /api/diaries/?skip=20&limit=10&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55862 - "OPTIONS /api/diaries?skip=30&limit=10&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55862 - "GET /api/diaries?skip=30&limit=10&public_only=true HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:55862 - "OPTIONS /api/diaries/?skip=30&limit=10&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55118 - "GET /api/diaries/?skip=30&limit=10&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55118 - "OPTIONS /api/diaries?skip=0&limit=10&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55118 - "GET /api/diaries?skip=0&limit=10&public_only=true HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:55118 - "OPTIONS /api/diaries/?skip=0&limit=10&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55126 - "GET /api/diaries/?skip=0&limit=10&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55126 - "GET /api/diaries/68f8e361ac074682c1e615ef HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55126 - "GET /api/diaries/68f8e361ac074682c1e615ef HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55126 - "GET /api/diaries/68f8e361ac074682c1e615ef/comments?sort_by=newest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55126 - "GET /api/diaries/68f8e361ac074682c1e615ef/comments?sort_by=newest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55126 - "GET /api/diaries?skip=0&limit=10&public_only=true HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:40792 - "GET /api/diaries?skip=0&limit=10&public_only=true HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:40792 - "GET /api/diaries/?skip=0&limit=10&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55126 - "GET /api/diaries/?skip=0&limit=10&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55126 - "OPTIONS /api/diaries/68f8f5da346a2e47a4ce5f55 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40792 - "OPTIONS /api/diaries/68f8f5da346a2e47a4ce5f55 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40792 - "GET /api/diaries/68f8f5da346a2e47a4ce5f55 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55126 - "GET /api/diaries/68f8f5da346a2e47a4ce5f55 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55126 - "OPTIONS /api/diaries/68f8f5da346a2e47a4ce5f55/comments?sort_by=newest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40792 - "OPTIONS /api/diaries/68f8f5da346a2e47a4ce5f55/comments?sort_by=newest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40782 - "GET /api/diaries/68f8f5da346a2e47a4ce5f55/comments?sort_by=newest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40794 - "GET /api/diaries/68f8f5da346a2e47a4ce5f55/comments?sort_by=newest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40794 - "GET /api/diaries?skip=0&limit=10&public_only=true HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:40782 - "GET /api/diaries?skip=0&limit=10&public_only=true HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:40782 - "GET /api/diaries/?skip=0&limit=10&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40794 - "GET /api/diaries/?skip=0&limit=10&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40794 - "OPTIONS /api/diaries/68f8f5da346a2e47a4ce5f5a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40782 - "OPTIONS /api/diaries/68f8f5da346a2e47a4ce5f5a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40782 - "GET /api/diaries/68f8f5da346a2e47a4ce5f5a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40794 - "GET /api/diaries/68f8f5da346a2e47a4ce5f5a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40782 - "OPTIONS /api/diaries/68f8f5da346a2e47a4ce5f5a/comments?sort_by=newest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40794 - "OPTIONS /api/diaries/68f8f5da346a2e47a4ce5f5a/comments?sort_by=newest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40804 - "GET /api/diaries/68f8f5da346a2e47a4ce5f5a/comments?sort_by=newest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40800 - "GET /api/diaries/68f8f5da346a2e47a4ce5f5a/comments?sort_by=newest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40800 - "GET /api/diaries?skip=0&limit=10&public_only=true HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:40804 - "GET /api/diaries?skip=0&limit=10&public_only=true HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:40804 - "GET /api/diaries/?skip=0&limit=10&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40800 - "GET /api/diaries/?skip=0&limit=10&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40804 - "OPTIONS /api/diaries/68f8f5da346a2e47a4ce5f53 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40800 - "OPTIONS /api/diaries/68f8f5da346a2e47a4ce5f53 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40800 - "GET /api/diaries/68f8f5da346a2e47a4ce5f53 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40804 - "GET /api/diaries/68f8f5da346a2e47a4ce5f53 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40800 - "OPTIONS /api/diaries/68f8f5da346a2e47a4ce5f53/comments?sort_by=newest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40804 - "OPTIONS /api/diaries/68f8f5da346a2e47a4ce5f53/comments?sort_by=newest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34460 - "GET /api/diaries/68f8f5da346a2e47a4ce5f53/comments?sort_by=newest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34468 - "GET /api/diaries/68f8f5da346a2e47a4ce5f53/comments?sort_by=newest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34468 - "GET /api/diaries?skip=0&limit=10&public_only=true HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:34460 - "GET /api/diaries?skip=0&limit=10&public_only=true HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:34460 - "GET /api/diaries/?skip=0&limit=10&public_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34468 - "GET /api/diaries/?skip=0&limit=10&public_only=true HTTP/1.1" 200 OK
