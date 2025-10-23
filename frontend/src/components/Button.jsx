@@ -25,6 +25,7 @@ const Button = ({
   type = 'button',
   onClick,
   className = '',
+  as = 'button',
   ...props
 }) => {
   // 기본 스타일
@@ -48,16 +49,23 @@ const Button = ({
 
   const widthStyle = fullWidth ? 'w-full' : '';
 
+  const combinedClassName = `${baseStyles} ${sizeStyles[size]} ${variantStyles[variant]} ${widthStyle} ${className}`;
+
+  // as prop에 따라 다른 요소로 렌더링
+  const Component = as;
+
+  // button 타입일 때만 type과 onClick 전달
+  const buttonProps = Component === 'button' ? { type, onClick } : { onClick };
+
   return (
-    <button
-      type={type}
-      onClick={onClick}
+    <Component
       disabled={disabled}
-      className={`${baseStyles} ${sizeStyles[size]} ${variantStyles[variant]} ${widthStyle} ${className}`}
+      className={combinedClassName}
+      {...buttonProps}
       {...props}
     >
       {children}
-    </button>
+    </Component>
   );
 };
 

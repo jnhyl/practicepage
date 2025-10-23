@@ -32,18 +32,21 @@ async def comment_helper(comment, current_user_id: str = None) -> dict:
         })
         is_liked = like is not None
 
-    # 작성자의 프로필 이미지 가져오기
+    # 작성자의 최신 닉네임과 프로필 이미지 가져오기
+    author_nickname = "익명"
     author_profile_image = None
     if comment.get("user_id"):
         author = await db.users.find_one({"_id": ObjectId(comment["user_id"])})
         if author:
+            author_nickname = author.get("nickname", author.get("username", "익명"))
             author_profile_image = author.get("profile_image")
 
     return {
+        "id": str(comment["_id"]),  # 프론트엔드 호환성을 위해 id 필드 추가
         "_id": str(comment["_id"]),
         "diary_id": str(comment["diary_id"]),
         "content": comment["content"],
-        "author": comment["author"],
+        "author": author_nickname,  # DB 저장값이 아닌 users 컬렉션에서 가져온 최신 닉네임 사용
         "user_id": str(comment["user_id"]),
         "author_profile_image": author_profile_image,
         "likes_count": likes_count,

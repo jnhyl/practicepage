@@ -198,7 +198,7 @@ async def update_profile(
 ):
     """회원정보 수정"""
     db = get_database()
-    
+
     # 현재 사용자 정보 조회
     user = await db.users.find_one({"username": current_user.username})
     if not user:
@@ -206,14 +206,15 @@ async def update_profile(
             status_code=status.HTTP_404_NOT_FOUND,
             detail="User not found"
         )
-    
+
     # 업데이트할 필드 수집
     update_fields = {}
-    
+
     # 닉네임 업데이트
     if update_data.nickname is not None:
         update_fields["nickname"] = update_data.nickname
-    
+        # 일기와 댓글의 author는 조회 시 users 테이블에서 실시간으로 가져오므로 별도 업데이트 불필요
+
     # 이메일 업데이트
     if update_data.email is not None:
         # 이메일 중복 확인
@@ -227,7 +228,7 @@ async def update_profile(
                 detail="Email already registered"
             )
         update_fields["email"] = update_data.email
-    
+
     # 비밀번호 변경
     if update_data.new_password is not None:
         if not update_data.current_password:
@@ -235,23 +236,23 @@ async def update_profile(
                 status_code=status.HTTP_400_BAD_REQUEST,
                 detail="Current password is required to change password"
             )
-        
+
         # 현재 비밀번호 확인
         if not verify_password(update_data.current_password, user["hashed_password"]):
             raise HTTPException(
                 status_code=status.HTTP_400_BAD_REQUEST,
                 detail="Current password is incorrect"
             )
-        
+
         # 새 비밀번호 해시화
         update_fields["hashed_password"] = get_password_hash(update_data.new_password)
-    
+
     if update_fields:
         await db.users.update_one(
             {"username": current_user.username},
             {"$set": update_fields}
         )
-    
+
     # 업데이트된 사용자 정보 반환
     updated_user = await db.users.find_one({"username": current_user.username})
     return UserResponse(**user_helper(updated_user))
